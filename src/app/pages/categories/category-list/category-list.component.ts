@@ -17,7 +17,7 @@ export class CategoryListComponent implements OnInit {
   ngOnInit() {
     this.categoryService.getAll().subscribe(
       categories => this.categories = categories,
-      error => alert("Erro ao carregar a lista de categorias")
+      error => alert("Erro ao carregar a lista")
     )
   }
 
