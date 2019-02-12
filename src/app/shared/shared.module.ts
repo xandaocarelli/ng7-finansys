@@ -13,8 +13,7 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    RouterModule,
-    PageHeaderComponent
+    RouterModule
   ],
   exports: [
     // Shared modules
