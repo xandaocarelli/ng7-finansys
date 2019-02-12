@@ -4,12 +4,12 @@
       <a routerLink="/">Home</a>
     </li>
 
-    <li *ngFor="let item of itens" class="breadcrumb-item" [class.active]="isTheLastItem">
-      <a *ngIf="!isTheLastItem" [routerLink]="item.link">
+    <li *ngFor="let item of items" class="breadcrumb-item" [class.active]="isTheLastItem(item)">
+      <a *ngIf="!isTheLastItem(item)" [routerLink]="item.link">
         {{ item.text}}
       </a>
 
-      <span *ngIf="isTheLastItem">
+      <span *ngIf="isTheLastItem(item)">
         {{ item.text }}
       </span>
     </li>
