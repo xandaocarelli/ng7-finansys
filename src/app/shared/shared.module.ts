@@ -2,16 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common'
 import { ReactiveFormsModule } from '@angular/forms';
 import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component'
-import { RouterModule } from '@angular/router'
+import { RouterModule } from '@angular/router';
+import { PageHeaderComponent } from './components/page-header/page-header.component'
 
 @NgModule({
   declarations: [
-    BreadCrumbComponent
+    BreadCrumbComponent,
+    PageHeaderComponent
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    PageHeaderComponent
   ],
   exports: [
     // Shared modules
@@ -19,7 +22,8 @@ import { RouterModule } from '@angular/router'
     ReactiveFormsModule,
     RouterModule,
     // Shared components
-    BreadCrumbComponent
+    BreadCrumbComponent,
+    PageHeaderComponent
   ]
 })
 export class SharedModule { }
